@@ -1,0 +1,79 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    The diff output gave me a limited view of where any differences could be 
+    found. By narrowing down the lines I needed to look at, it reduced the 
+    effort on my part, especially on the larger (second) file. However, it 
+    still included a number of change lines that didn't have problems, and 
+    it didn't indicate what part of changed lines was different. It helps, 
+    but it doesn't do the whole job.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    The biggest help is in debugging (as demonstrated in the course material 
+    to date). One can go back and compare a current, buggy version with the 
+    last version that worked. Also, it is possible to maintain the source code 
+    for multiple releases of software in one place. By linking together the 
+    then-current version of each component of a realease in a single "version" 
+    release, it is possible to reconstruct a build without having to multiply 
+    save each file. It's also possible to revert to the last workable version 
+    of a file (even if not part of a full build) if you really mess up and need 
+    to restart your changes from a new beginning.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    PROS: (1) Only the programmer can judge when a set of changes has logical 
+    integrity. Logical integrity (a whole unit of work sticks together) is a 
+    good criterion for a commit boundary because you can view, keep, or roll 
+    back a complete unit of change at the same time. (2) The developer will 
+    have a better sense than the computer (or clock) does of how much change 
+    can be "gronked" (understood) in one go. Something that's very involved - 
+    say, a change that affects a long routine in many places but with only a 
+    dozen lines of code - may be harder to think through as a unit than 
+    something that's simple but takes more lines of code - say, an inserted 
+    procedure to correct a possible error state.
+
+    CONS: It's really easy to forget to "save" your work at reasonable 
+    intervals. A timed save can prevent massive losses in time and creative 
+    energy if there's some kind of system failure (power hit, coffee in the CPU) 
+    that prevents a manual save from happening.
+
+    COMPROMISE: It would be great to have a periodic physical-level save (say, 
+    at the file level) to manage physical risk teamed with a manual, logical-
+    level commit to preserve logical units of work.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Different systems are designed to support different kinds of endeavors. 
+    Google Docs tends to be used in creating free-standing documents (sort of 
+    like the example of manipulating photos; files are not strongly inter- 
+    related). Programming version-control systems are designed to support sets 
+    of files that may have heavy interrelationships. That is why they (including 
+    Git) need to manage commits that synchronize across files.
+
+    Managing multi-file commits is complicated. A mass-audience product like
+    Google Docs or Dropbox is not going to take on that complexity unless it's 
+    function-critical.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    With git log, I can see when changes were made and what the responsible 
+    developer said at the time in notes. This gives the overview of when changes 
+    were committed, who did it, and what they said about it. With git diff I can 
+    see the details of what changed at each step in each file.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    I always know I can get back the version that worked. If I break stuff I
+    can dig myself back out by reverting the code to the last breakpoint.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    It's a good place to store the materials I use for this course (and others). 
+    That way I can check back and use prior versions of the stuff I write. I also
+    can link versions of different files together into a singleworking set.
