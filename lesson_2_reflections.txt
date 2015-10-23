@@ -45,7 +45,25 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	1) If I'm working independently of other people in a project, brances let 
+	us each track the logical setpoints in our journey, while giving us a 
+	chance to merge our independent changes at a later time, when the sum of 
+	each branch's changes is ready for release.
+
+	2) If I'm working on one problem, but another unrelated problem surfaces 
+	(in my work on in others' work within the project), I can suspend my 
+	current work, go back and create a branch off the mainline code, fix the 
+	"interruption", and then resume my original work. When I finish the work 
+	reflected in each branch I can determine how best to integrate its' 
+	results into the greater project. This also allies to experimental changes, 
+	which may never be integrated into the production version ("dead ends").
+
 How do the diagrams help you visualize the branch structure?
+
+	Visual depiction of the ancestor/offspring relationships among commits 
+	emphasizes the linearity of each branch's history and the relationship 
+	of changes (commits) made along each branch. it also adds a visual link 
+	at the point that each branch diverges from its parent.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
