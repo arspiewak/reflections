@@ -35,6 +35,13 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	As you work on an issue (bug, new feature, or whatever), you should be sure 
+	to add each file you modfy to the staging area, as the first change is 
+	stored. As the logical unit is completed, a quick status will remind you 
+	which files have been touched. Before moving on to the next logical unit 
+	of change, a commit should be made, documenting the changes that were made 
+	and why they were done.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
