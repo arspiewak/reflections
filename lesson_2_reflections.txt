@@ -78,3 +78,18 @@ the diagram the way we do?
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+	git handles the parts of a merge that don't have conflicts without 
+	requiring attention. That's handy. Where there are lines that conflict, 
+	git marks them in a fashion that you can find them and (hopefully!) 
+	resolve differences. That is definitely bettter than trying to read 
+	through pages of code to spot where the changes are.
+
+	Two "cons" come to mind. First, small changes can get lost in the 
+	background. For example, the change of a "3" to a "2" in our class 
+	example was made in a paragraph of code that was different between 
+	branches. The functionality where that change was made had moved from 
+	inline code to a called function. I had to remember that the change was 
+	needed there and make it, or the branch would have lost what made it 
+	different. So the automated comparison, while it's accurate in flagging 
+	what's different, may not always tell the whole story. Buyer beware.
