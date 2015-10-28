@@ -13,7 +13,13 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Only I know how my remote repository is being used and what I expect to find there. 
+    If it's a group project, I don't know what changes someone else may make, and how 
+    they'll affect my work. I want my local copy of the code to stay stable until I 
+    reach a point where I am ready to merge others' work in. If I'm working on my own, 
+    the best way to move changes depends on what I'm doing. Different projects have 
+    different operating needs. Only the developer(s) will know what's needed, so a 
+    generic automatic  push would be a bad idea.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
