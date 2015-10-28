@@ -1,7 +1,14 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Fill in your answer here
+    I would use a remote repository when there needs to be access to a related set of 
+    project files across a number of different computers. Examples are: if I'm working 
+    with collaborators, if I'm working across different systems (a back-end server and a 
+    different front-end client), projects that must work on different client operating 
+    systems, or projects where I work on different computers at different times (at 
+    home, at work, on the road). Storing my repository "in the cloud" can also be a way
+    of assuring a secure and functionally consistent backup (made at a commit boundary), 
+    in case my computer is damaged or lost.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
