@@ -24,7 +24,32 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    What all three things - forks, clones, and branches - have in common is 
+    that they are all independent versions of the contents of a repository. 
+
+    Forks and clones are complete copies of all the repository - its files and 
+    history, which records all its branches and commits. A clone is a complete 
+    copy that is created in another place, either on a remote or on the local 
+    computer. A fork is a special kind of clone: it is a clone of a remote 
+    repository that stays on the remote repository. Typically, a clone is used 
+    when the two versions of the repository might be kept in sync (the original 
+    copy is kept as a remote). A fork is used when the copies are going to be 
+    independent.
+
+    Branches are similar: all the files in a repository exist in both branches 
+    when a new branch is created, and files may then be changed to different 
+    versions between the branches. But two branches exist within the same 
+    repository and share a working directory. Branches can be merged together, 
+    where clones and forks cannot (at least not with a simple merge command). 
+    When a repository is forked or cloned, all branches inside it are copied. 
+    Branches are used within the same repository, often to allow independent 
+    changes to proceed at the same time, to be merged into one version at a 
+    later time.
+
+    Of course, after a repository is forked OR cloned the two copies may be 
+    updated separately. We have learned how to keep cloned repositories in 
+    sync after they split, using push and pull commands. We don't know yet 
+    about whether/how forked copies can be synced.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
