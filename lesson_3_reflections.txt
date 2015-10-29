@@ -54,7 +54,11 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    It's a local note about how many (and which) changes you have committed 
+    since you last synced with the remote. That helps you track where you are 
+    in terms of communicating what you are doing with other collaborators or 
+    platforms. You can track a set of commits that form a logically consistent 
+    whole "mini-release."
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
