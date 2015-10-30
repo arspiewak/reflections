@@ -57,8 +57,9 @@ stored locally?
     It's a local note about how many (and which) changes you have committed 
     since you last synced with the remote. That helps you track where you are 
     in terms of communicating what you are doing with other collaborators or 
-    platforms. You can track a set of commits that form a logically consistent 
-    whole "mini-release."
+    platforms. You can put together a set of commits that form a logically 
+    consistent whole "mini-release" and push it out into the world as a unit,
+    as a sort of "super-commit."
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
