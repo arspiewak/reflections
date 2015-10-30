@@ -103,4 +103,27 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    I would want to make changes in a branch when the changes I'm working on 
+    have the possibility of breaking the functionality of the project as a 
+    whole. Usually, that applies to a multi-developer project, or to a project 
+    that advances a functioning product. 
+
+    In the case of a multideveloper project, I want to complete a set of 
+    commits (each of which is an atomic unit of change) that completely 
+    implements a functional goal before I merge the change branch back into 
+    the master branch. Some elements may need to change a number of times as 
+    I complete and test them, and it would be a waste of time forcing others 
+    to adapt to "draft" changes until I'm sure they do the job. When they 
+    finally do the job, I merge them into the greater work, at which time the 
+    rest of the "world" must adapt (through the merge process). 
+
+    The other case - updates to a functioning project - is similar, but without 
+    the coordination element. There may be a need in the outside world for the 
+    master branch to work effectvely. While I make a change, I run the risk of 
+    breaking that integrity. Keeping a fixed commit label, within the chain of 
+    master commits, as the version the outside world sees is one way to do 
+    that, but the idea is clearer if I split off a branch until my work is 
+    stable enough for general release. The master branch is a sort of self-
+    documenting high-water-mark for progress.
+
+
