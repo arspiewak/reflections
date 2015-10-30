@@ -64,7 +64,41 @@ stored locally?
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I would probably try to do some change-logging in the comments of my code, 
+    which would interrupt the flow of the code and make it harder to read. 
+    It's also hard to remember to mark changes when your focus is on fixing a 
+    problem, not leaving bread crumbs for future code-archaeologists. 
+
+    I would also have to set up some infrastructure for discussion and for 
+    passing around new versions of code files, and for 'reserving' materials 
+    that you're working on so that merges can be managed. All that is handled 
+    within the git/github architecture. The drawback of roll-your-own anything 
+    is that it's hard to build robust and consistent systems, and clearly git 
+    has its history of use and improvement working for it. Someone's already 
+    faced the issues, worked them through, and worked toward consistency. When 
+    someone joins a project, if they already know git (pretty likely at this 
+    point), they won't have to learn my idiosyncratic system. Just my 
+    idiosyncratic implementation of the git system <grin>.
+
+    Without git, though, I would lose access to old versions of files, unless 
+    my project history was saved in full-project copies for each commit (or, 
+    more likely, each release). Having a very narrow granularity for commits 
+    and therefore for version changes is helpful, as each documented change 
+    is likely to have smaller scope, and therefore be easier to understand 
+    in retrospect (when archaeology is required). There's also less to examine 
+    in the case of a subtle defect.
+
+    It would also take more time without git/github to find and review 
+    changes; the system's diff utilities are very helpful.
+
+    The other side, what would be easier? Not much, except that git/github 
+    has a lot of complexity and a specific approach, and may be more 
+    complicated than some simple undertakings need. But simple undertakings 
+    have a way of growing and morphing (remember DOS?), and it's better to 
+    have an infrastructure that can scale up. Git's history proves that it 
+    can scale up to a pretty big project (eg, linux).
+
+    Mammoth answer. Call me Dostoevsky.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
